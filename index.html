@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio professionnel de Sylvain Paris, développeur frontend et créatif spécialisé dans les interfaces web modernes, performantes et orientées utilisateur."
+    />
+    <meta
+      name="keywords"
+      content="Sylvain Paris, développeur web, portfolio, frontend, UX/UI, HTML, CSS, JavaScript, PHP, Python, Niamey"
+    />
+    <meta name="theme-color" content="#0b1020" />
+    <title>Sylvain Paris | Développeur Web & UI Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-theme="dark">
+    <div class="background-grid" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <nav class="nav container" aria-label="Navigation principale">
+        <a href="#hero" class="brand" aria-label="Accueil">S<span>.</span>Paris</a>
+
+        <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links" id="mainNav">
+          <a href="#about">À propos</a>
+          <a href="#expertise">Compétences</a>
+          <a href="#projects">Projets</a>
+          <a href="#journey">Parcours</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="nav-actions">
+          <button class="theme-toggle" type="button" aria-label="Changer le thème" data-theme-toggle>
+            <span class="toggle-track">
+              <span class="toggle-thumb"></span>
+            </span>
+          </button>
+          <a class="btn btn-primary" href="#contact">Démarrer un projet</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container" id="hero">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Développeur web • UX/UI • Créatif</p>
+          <h1>
+            Je pense les interfaces comme des <span>expériences utiles</span>, belles et mémorables.
+          </h1>
+          <p class="lead">
+            Je suis <strong>Sylvain Paris</strong>, développeur web passionné par la création de solutions digitales qui allient
+            visibilité, performance et expérience utilisateur. J’aide les marques et projets à gagner en clarté, en confiance et en impact.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#projects">Voir mes projets</a>
+            <a class="btn btn-secondary" href="#contact">Me contacter</a>
+          </div>
+
+          <div class="hero-stats" aria-label="Statistiques clés">
+            <div>
+              <strong>20</strong>
+              <span>ans</span>
+            </div>
+            <div>
+              <strong>8+</strong>
+              <span>projets</span>
+            </div>
+            <div>
+              <strong>100%</strong>
+              <span>motivation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="portrait-stack">
+            <div class="orb orb-one"></div>
+            <div class="orb orb-two"></div>
+            <div class="portrait-frame">
+              <img
+                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80"
+                alt="Portrait de Sylvain Paris"
+              />
+            </div>
+            <div class="floating-card">
+              <span class="card-label">Disponible</span>
+              <strong>Pour des missions web</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="about">
+        <div class="section-head reveal">
+          <p class="eyebrow">À propos</p>
+          <h2>Un profil technique, structuré et orienté résultats.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="photo-panel reveal">
+            <img
+              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80"
+              alt="Étude, développement et design"
+            />
+          </div>
+
+          <div class="about-copy reveal">
+            <p>
+              Passionné par l’informatique et le développement numérique, j’aime concevoir des solutions faciles à utiliser,
+              visuellement lisibles et fonctionnellement solides. Mon travail part d’un besoin utilisateur pour aboutir à une interface claire,
+              performante et pertinente.
+            </p>
+            <p>
+              Mon objectif est de transformer des idées en expériences intelligentes et efficaces, avec un axe fort sur l’expérience utilisateur,
+              la qualité de la conception et la simplicité d’utilisation. J’essaie toujours d’aller au-delà d’une simple interface pour créer une solution utile.
+            </p>
+            <p>
+              En dehors du code, je m’intéresse au sport, à la musique, à la musculation et au développement personnel.
+              Ces passions m’aident à rester discipliné, créatif et constamment motivé à progresser.
+            </p>
+
+            <div class="meta-list">
+              <div><span>Ville</span><strong>Niamey</strong></div>
+              <div><span>Âge</span><strong>20 ans</strong></div>
+              <div><span>Centres d’intérêt</span><strong>Sport, musique, design</strong></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted" id="expertise">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Compétences</p>
+            <h2>Des compétences techniques solides, adaptées à des projets concrets.</h2>
+          </div>
+
+          <div class="expertise-grid">
+            <article class="expertise-card reveal">
+              <span class="badge">Frontend</span>
+              <h3>Interface & expérience</h3>
+              <p>HTML5, CSS3, JavaScript, accessibilité, responsive design, animations, ergonomie.</p>
+            </article>
+
+            <article class="expertise-card reveal">
+              <span class="badge">Backend</span>
+              <h3>Logique fonctionnelle</h3>
+              <p>PHP, Python, gestion de formulaires, logique métier, intégration de services web.</p>
+            </article>
+
+            <article class="expertise-card reveal">
+              <span class="badge">UI/UX</span>
+              <h3>Conception produit</h3>
+              <p>Wireframes, hiérarchie visuelle, prototype d’interfaces, design centré utilisateur.</p>
+            </article>
+
+            <article class="expertise-card reveal">
+              <span class="badge">Outils</span>
+              <h3>Workflow & productivité</h3>
+              <p>Git, VS Code, Figma, navigateur, optimisation, debugging et organisation du code.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="projects">
+        <div class="section-head reveal">
+          <p class="eyebrow">Projets</p>
+          <h2>Des réalisations concrètes, pensées pour résoudre des besoins réels.</h2>
+        </div>
+
+        <div class="filter-bar reveal" aria-label="Filtres des projets">
+          <button class="filter-btn is-active" type="button" data-filter="Tous">Tous</button>
+          <button class="filter-btn" type="button" data-filter="Frontend">Frontend</button>
+          <button class="filter-btn" type="button" data-filter="PHP">PHP</button>
+          <button class="filter-btn" type="button" data-filter="UI/UX">UI/UX</button>
+          <button class="filter-btn" type="button" data-filter="Full-stack">Full-stack</button>
+        </div>
+
+        <div class="project-grid" id="projectGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="section section-muted" id="journey">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Parcours</p>
+            <h2>Une progression orientée apprentissage, pratique et amélioration continue.</h2>
+          </div>
+
+          <div class="timeline reveal">
+            <article class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-card">
+                <p class="timeline-date">2024 — 2026</p>
+                <h3>Formation en Génie Logiciel</h3>
+                <p>Centre IAT Niamey, Niger</p>
+                <small>Apprentissage de la programmation, du web, du design et de la logique de développement.</small>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-card">
+                <p class="timeline-date">2025</p>
+                <h3>Projets web personnels</h3>
+                <p>Sites vitrine, portfolio, réservation, bibliothèque</p>
+                <small>Conception d’interfaces, intégration HTML/CSS, logique applicative et expérience utilisateur.</small>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="contact">
+        <div class="contact-shell reveal">
+          <div class="contact-copy">
+            <p class="eyebrow">Contact</p>
+            <h2>Discutons votre prochain projet.</h2>
+            <p>
+              Vous avez une idée, un besoin digital ou un projet à transformer ? Je peux vous aider à concevoir une interface claire,
+              fonctionnelle, moderne et orientée utilisateur.
+            </p>
+
+            <div class="contact-list">
+              <a href="mailto:sylvainsaint2@gmail.com"><span>Email</span><strong>sylvainsaint2@gmail.com</strong></a>
+              <a href="tel:+22791772381"><span>Téléphone</span><strong>+227 91 77 23 81</strong></a>
+              <a href="https://wa.me/22791772381" target="_blank" rel="noreferrer"><span>WhatsApp</span><strong>+227 91 77 23 81</strong></a>
+              <a href="#"><span>TikTok</span><strong>@ledev_rs</strong></a>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm" action="mailto:sylvainsaint2@gmail.com" method="post" enctype="text/plain">
+            <div class="input-row">
+              <label>
+                <span>Nom</span>
+                <input type="text" name="name" placeholder="Votre nom" required />
+              </label>
+              <label>
+                <span>Email</span>
+                <input type="email" name="email" placeholder="Votre email" required />
+              </label>
+            </div>
+
+            <label>
+              <span>Objet</span>
+              <input type="text" name="subject" placeholder="Objet du message" required />
+            </label>
+
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="5" placeholder="Décrivez votre projet..." required></textarea>
+            </label>
+
+            <button class="btn btn-primary" type="submit">Envoyer le message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year">2026</span> Sylvain Paris. Tous droits réservés.</p>
+        <div class="footer-links">
+          <a href="#hero">Accueil</a>
+          <a href="#projects">Projets</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal-backdrop" id="projectModal" aria-hidden="true">
+      <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button type="button" class="modal-close" aria-label="Fermer la fiche projet">×</button>
+        <img id="modalImage" src="" alt="Aperçu du projet" />
+        <div class="modal-content">
+          <p class="eyebrow">Étude de cas</p>
+          <h3 id="modalTitle">Projet</h3>
+          <p id="modalSummary"></p>
+          <ul id="modalHighlights"></ul>
+          <div class="modal-meta" id="modalMeta"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
