@@ -338,20 +338,99 @@ body[data-theme="light"] .toggle-thumb {
   padding: 24px;
 }
 
-.portrait-frame {
+.device-card {
   position: relative;
-  border-radius: 30px;
-  overflow: hidden;
+  width: min(100%, 420px);
+  background: linear-gradient(180deg, rgba(17, 25, 39, 0.96), rgba(9, 15, 24, 0.9));
   border: 1px solid var(--line);
-  background: var(--panel);
+  border-radius: 32px;
+  overflow: hidden;
   box-shadow: var(--shadow);
-  min-height: 560px;
+  padding: 18px 18px 22px;
 }
 
-.portrait-frame img {
+body[data-theme="light"] .device-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(241, 245, 255, 0.9));
+}
+
+.device-topbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.device-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.device-dot:nth-child(1) {
+  background: #ff6b7d;
+}
+
+.device-dot:nth-child(2) {
+  background: #ffbf5f;
+}
+
+.device-dot:nth-child(3) {
+  background: #40d89e;
+}
+
+.device-screen {
+  display: grid;
+  justify-items: center;
+  gap: 18px;
+  padding-top: 22px;
+  min-height: 420px;
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at top left, rgba(139, 92, 246, 0.18), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(92, 217, 255, 0.18), transparent 28%),
+    rgba(255, 255, 255, 0.02);
+}
+
+.initials-badge {
+  width: 150px;
+  height: 150px;
+  display: grid;
+  place-items: center;
+  border-radius: 30px;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.9), rgba(92, 217, 255, 0.85));
+  box-shadow: 0 24px 40px rgba(124, 92, 246, 0.25);
+  color: #f8fbff;
+  font-size: clamp(2.8rem, 3vw, 3.4rem);
+  font-weight: 900;
+  letter-spacing: -0.08em;
+}
+
+.code-stack {
+  width: min(100%, 290px);
+  display: grid;
+  gap: 12px;
+}
+
+.code-line {
+  display: block;
+  height: 10px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(92, 217, 255, 0.7), rgba(139, 92, 246, 0.5));
+  opacity: 0.9;
+}
+
+.code-line-lg {
   width: 100%;
-  height: 560px;
-  object-fit: cover;
+}
+
+.code-line-md {
+  width: 72%;
+}
+
+.code-line-sm {
+  width: 58%;
 }
 
 .orb {
