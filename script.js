@@ -46,33 +46,33 @@ const projects = [
   },
   {
     id: 4,
-    title: 'Bibliothèque hors ligne',
+    title: 'Bibliothèque Offline',
     category: 'PHP',
-    tech: ['PHP', 'HTML', 'CSS'],
+    tech: ['PHP', 'MySQL', 'HTML', 'CSS', 'JavaScript'],
     year: '2025',
-    image: 'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=1200&q=80',
-    summary: 'Plateforme permettant un accès simple à des ressources documentaires sans dépendre de la connexion internet.',
+    image: 'bibliotheque-preview.png',
+    summary: 'Application web de gestion de bibliothèque permettant d’organiser les ressources, les utilisateurs et les activités selon les différents espaces de consultation.',
     details: [
-      'Conception d’une interface de consultation rapide et lisible.',
-      'Organisation logique des contenus pour améliorer la navigation.',
-      'Approche centrée sur la simplicité d’usage et la disponibilité des documents.'
+      'Organisation des livres disponibles par classe, section et matière.',
+      'Séparation des espaces élève et professeur pour des usages adaptés.',
+      'Interface administrative dédiée à la gestion centralisée de la bibliothèque.'
     ],
-    link: '#contact'
+    link: 'https://bibliotheque.x10.mx'
   },
   {
     id: 5,
-    title: 'Salon de coiffure réservation',
+    title: 'Barber Factory',
     category: 'Full-stack',
-    tech: ['PHP', 'HTML', 'CSS', 'JavaScript'],
+    tech: ['PHP', 'MySQL', 'HTML', 'CSS', 'Bootstrap'],
     year: '2025',
-    image: 'https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1200&q=80',
-    summary: 'Solution de réservation pensée pour faciliter la prise de rendez-vous directement depuis mobile ou ordinateur.',
+    image: 'barber-factory-preview.png',
+    summary: 'Application web de gestion de salon de coiffure présentant les services, les horaires et un parcours simple de réservation.',
     details: [
-      'Simplification du parcours de réservation pour réduire les frictions utilisateur.',
-      'Interface claire et fonctionnelle adaptée à un usage quotidien.',
-      'Mise en place d’un parcours de prise de rendez-vous plus direct et plus pratique.'
+      'Présentation claire des coiffures, prestations et informations du salon.',
+      'Affichage des horaires d’ouverture et des coordonnées pour faciliter la prise de rendez-vous.',
+      'Interface responsive pensée pour rendre la navigation simple sur ordinateur et mobile.'
     ],
-    link: '#contact'
+    link: 'https://barberfactory.x10.mx'
   }
 ];
 
@@ -109,7 +109,10 @@ function renderProjects(category = 'Tous') {
             <p>${project.summary}</p>
             <div class="project-meta">
               <span>${project.tech.join(' • ')}</span>
-              <button type="button" data-project-id="${project.id}">Voir le cas</button>
+              <div class="project-actions">
+                <button type="button" data-project-id="${project.id}">Voir le projet</button>
+                ${project.link.startsWith('http') ? `<a href="${project.link}" target="_blank" rel="noopener noreferrer">Visiter le site</a>` : ''}
+              </div>
             </div>
           </div>
         </article>
@@ -150,6 +153,9 @@ function openProjectModal(projectId) {
   modalSummary.textContent = project.summary;
   modalHighlights.innerHTML = project.details.map((item) => `<li>${item}</li>`).join('');
   modalMeta.innerHTML = project.tech.map((item) => `<span>${item}</span>`).join('');
+  if (project.link.startsWith('http')) {
+    modalMeta.insertAdjacentHTML('beforeend', `<a class="modal-live-link" href="${project.link}" target="_blank" rel="noopener noreferrer">Visiter le site</a>`);
+  }
   modal.classList.add('is-open');
   modal.setAttribute('aria-hidden', 'false');
   document.body.style.overflow = 'hidden';

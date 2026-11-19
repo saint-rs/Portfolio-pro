@@ -675,6 +675,31 @@ body[data-theme="light"] .device-card {
   font-weight: 700;
 }
 
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.project-actions button,
+.project-actions a,
+.modal-live-link {
+  border: none;
+  background: transparent;
+  color: var(--secondary);
+  font-weight: 700;
+  font-size: 0.82rem;
+}
+
+.modal-live-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid rgba(92, 217, 255, 0.35);
+}
+
 .timeline {
   position: relative;
   display: grid;
@@ -1017,15 +1042,14 @@ body[data-theme="light"] .modal-card {
   }
 
   .footer-inner,
-  .contact-list a {
+  .contact-list a,
+  .project-meta {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .portrait-frame,
-  .portrait-frame img {
-    min-height: 420px;
-    height: 420px;
+  .project-actions {
+    justify-content: flex-start;
   }
 }
 
